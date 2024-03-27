@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "speed-font";
+  src: url("speed.ttf") format("woff2");
+  /* font-weight: bold; */
+}
+@font-face {
+  font-family: "EF_MACHO";
+  src: url("EF_MACHO.ttf") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* 백그라운드 컬러 #15042C 예정 */
+#result {
+  display: none;
+  background-color: #15042c48;
+  text-align: center;
+  border-radius: 20px;
+  margin-top : auto;
+}
+
+.resultname {
+  font-size: 26vw;
+}
+
+.resultDesc {
+  font-size: 20vw;
+}
+
+.kakao {
+  color: white;
+  background-color: #fee500;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 20px;
+}
+/* 난 부트스트랩으로 클래스를 갖고와서 괜찮
+.kakao:hover, .kakao:focus {
+    background-color: whitesmoke;
+    color: #FEE500;
+}
+*/
+.resultimg-block {
+  height: 70vh;
+}
+
+.result-image {
+  /* justify-content: center; */
+  /* height: 10w; */
+}
+
+.result-image img {
+  /* max-height: 70%; */
+  border: solid 1px whitesmoke;
+  border-radius: 20px;
+}
+
+.result-description {
+  /* min-width: 80%; */
+}
+
+.result-title {
+  font-family: "EF_MACHO";
+}
+
+.sans-font {
+  font-family: "Noto+Sans+KR";
+  font-style: italic;
+  /* font-weight: bold; */
+}
+
+/* 작은 화면일 때 글꼴 크기 조절 */
+@media (max-width: 576px) {
+  #result{
+    width: 95%;
+  }
+  #result h1 {
+    font-size: 4.2vw;
+  }
+  #result img {
+    width: 30vh;
+  }
+  .resultname {
+    font-size: 3.2vw;
+    /* 글씨 색상 변경 */
+    background: linear-gradient(
+      to bottom,
+      #276d59 6%,
+      #85d4b7 47%,
+      #3d9b6f 100%
+    );
+    -webkit-background-clip: text; /* 텍스트에 배경을 적용하는 속성 */
+    -webkit-text-fill-color: transparent; /* 텍스트의 색상을 투명하게 설정하는 속성 */
+  }
+  .resultDesc {
+    font-size: 2.7vw;
+  }
+}
+
+/* 큰 화면일 때 글꼴 크기 조절 */
+@media (min-width: 576px) {
+  #result{
+    width: 60%;
+  }
+  #result h1 {
+    font-size: 4vw;
+  }
+  #result img {
+    width: 25vh;
+  }
+  .resultname {
+    font-size: 2.5vh;
+    /* 글씨 색상 변경 */
+    background: linear-gradient(
+      to bottom,
+      #276d59 6%,
+      #85d4b7 47%,
+      #3d9b6f 100%
+    );
+    -webkit-background-clip: text; /* 텍스트에 배경을 적용하는 속성 */
+    -webkit-text-fill-color: transparent; /* 텍스트의 색상을 투명하게 설정하는 속성 */
+  }
+  .resultDesc {
+    font-size: 2vh;
+  }
+}

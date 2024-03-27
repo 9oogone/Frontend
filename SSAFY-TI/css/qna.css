@@ -1,0 +1,72 @@
+#qna {
+  display: none;
+  margin-bottom: 100px;
+}
+
+.qBox {
+  background-color: rgba(245, 245, 245, 0);
+  text-align: center;
+  width: 100%;
+}
+
+.answerList {
+  background-color: rgba(245, 245, 245, 0);
+  display: block;
+  width: 100%;
+  border: 0px;
+  color: rgb(38, 180, 116);
+}
+
+.answerList:hover,
+.answerList:focus {
+  background-color: rgba(255, 192, 203, 0);
+  color: rgba(245, 245, 245);
+}
+
+.status {
+  height: 20px;
+  width: 80%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.statusBar {
+  height: 100%;
+  border-radius: 20px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febbbb+0,fe9090+52,ff5c5c+100;Red+3D+%231 */
+  background: #febbbb;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #febbbb 0%, #fe9090 52%, #ff5c5c 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #febbbb 0%,
+    #fe9090 52%,
+    #ff5c5c 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #febbbb 0%, #fe9090 52%, #ff5c5c 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#febbbb', endColorstr='#ff5c5c', GradientType=0);
+  /* IE6-9 */
+}
+
+/* 작은 화면일 때 글꼴 크기 조절 */
+@media (max-width: 576px) {
+  .container .qBox {
+    font-size: 4vw;
+  }
+  .container .answerList {
+    font-size: 2.7vw;
+  }
+}
+
+/* 큰 화면일 때 글꼴 크기 조절 */
+@media (min-width: 576px) {
+  .container .qBox {
+    font-size: 2.8vw;
+  }
+  .container .answerList {
+    font-size: 1.5vw;
+  }
+}

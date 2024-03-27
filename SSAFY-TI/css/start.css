@@ -1,0 +1,30 @@
+#start {
+  width: 80%;
+  text-align: center;
+}
+
+/* 작은 화면일 때 글꼴 크기 조절 */
+@media (max-width: 576px) {
+  .container h1 {
+    font-size: 12vw;
+  }
+  .container p {
+    font-size: 4vw;
+  }
+  .container button {
+    font-size: 3vw;
+  }
+}
+
+/* 큰 화면일 때 글꼴 크기 조절 */
+@media (min-width: 576px) {
+  .container h1 {
+    font-size: 8vw;
+  }
+  .container p {
+    font-size: 2.5vw;
+  }
+  .container button {
+    font-size: 1.5vw;
+  }
+}
